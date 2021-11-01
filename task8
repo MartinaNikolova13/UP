@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+	int n;
+	std::cin >> n;
+	int dividor = 0;
+	for (int i = 1; i <= n; i++) {
+		if (n % i == 0) {
+			dividor++;
+		}
+
+	}
+	if (dividor == 2) {
+		std::cout << "YES" << std::endl;
+	}
+	else {
+		std::cout << "NO";
+	}
+}
