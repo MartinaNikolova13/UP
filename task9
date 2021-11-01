@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+	for (char i = 'B'; i <= 'Z'; i++) {
+		if (i == 'E' || i == 'I' || i == 'O' || i == 'U' || i=='Y') {
+			continue;
+		}
+	
+		std::cout << i << std::endl;
+	}
+
+
+}
