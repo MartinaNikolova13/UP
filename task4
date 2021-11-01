@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main()
+{
+    int n, fib1=1, fib2=1, temp;
+    std::cin >> n;
+    for (int i = 2; i < n; i++) {
+        temp = fib2;
+        fib2 = fib1 + fib2;
+        fib1 = temp;
+    }
+    std::cout << fib2 << std::endl;
+}
